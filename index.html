@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="mn">
 <head>
@@ -8,153 +9,134 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:"Montserrat",sans-serif;color:#102a56;background:#fff}
+body{font-family:Arial,sans-serif;color:#102a56;background:#fff}
 a{text-decoration:none;color:inherit}
 .container{width:90%;max-width:1250px;margin:auto}
 
-/* HEADER */
-header{height:82px;background:white;position:sticky;top:0;z-index:1000;box-shadow:0 2px 15px rgba(0,0,0,.08)}
-.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:25px}
+header{height:82px;background:white;position:sticky;top:0;z-index:1000;box-shadow:0 2px 15px #0001}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .logo{display:flex;align-items:center;gap:12px}
-.logo-icon{width:52px;height:52px;background:#0759c9;color:white;border-radius:12px;display:flex;justify-content:center;align-items:center;font-weight:800;font-size:16px}
+.logo-icon{width:48px;height:48px;background:#0759c9;color:white;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:bold}
 .logo-text h2{font-size:15px;color:#073a80}
-.logo-text p{font-size:9px;margin-top:4px;color:#777}
-nav{display:flex;gap:22px;align-items:center}
-nav a{font-size:12px;font-weight:600;color:#173d73;transition:.3s}
+.logo-text p{font-size:10px;margin-top:4px;color:#777}
+nav{display:flex;gap:18px;align-items:center}
+nav a{font-size:12px;font-weight:bold;color:#173d73}
 nav a:hover{color:#0865db}
-.login-btn{background:#0864d7;color:white;padding:12px 22px;border-radius:25px;font-size:12px;font-weight:700}
-.menu-btn{display:none;border:none;background:none;font-size:25px;cursor:pointer}
+.login-btn{background:#0864d7;color:white;padding:12px 20px;border-radius:25px;font-size:12px;font-weight:bold}
+.menu-btn{display:none;border:0;background:none;font-size:25px;cursor:pointer}
 
-/* HERO */
-.hero{min-height:560px;position:relative;background:linear-gradient(90deg,rgba(3,30,69,.9),rgba(3,30,69,.45),rgba(3,30,69,.1)),url("https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1800&q=80");background-size:cover;background-position:center}
+.hero{min-height:560px;background:linear-gradient(90deg,#031e45e8,#031e4570,#031e4510),url("https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1800&q=80") center/cover}
 .hero-content{padding-top:120px;color:white}
-.small-title{color:#ffd45a;font-size:13px;font-weight:700;letter-spacing:1px;margin-bottom:15px}
-.hero h1{font-size:64px;line-height:1.05;margin-bottom:25px}
-.hero h1 span{color:#fff}
+.small-title{color:#ffd45a;font-size:13px;font-weight:bold;letter-spacing:1px;margin-bottom:15px}
+.hero h1{font-size:60px;line-height:1.1;margin-bottom:25px}
 .hero-description{max-width:600px;line-height:1.8;font-size:15px;color:#edf5ff}
 .hero-buttons{display:flex;gap:15px;margin-top:35px}
-.btn{padding:15px 25px;border-radius:30px;font-weight:700;font-size:13px}
+.btn{display:inline-block;padding:15px 25px;border-radius:30px;font-weight:bold;font-size:13px}
 .primary{background:#0870e8;color:white}
 .secondary{border:1px solid white;color:white}
 
-/* QUICK SECTION */
 .quick-section{background:#f5f8fc;padding:35px 0}
 .quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.quick-card{background:white;padding:25px;display:flex;gap:15px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,.06);transition:.3s}
-.quick-card:hover{transform:translateY(-5px)}
-.quick-icon{min-width:50px;height:50px;border-radius:50%;background:#e7f0ff;display:flex;align-items:center;justify-content:center;font-size:23px}
-.quick-card h3{font-size:15px;margin-bottom:9px}
+.quick-card{background:white;padding:22px;display:flex;gap:13px;border-radius:10px;box-shadow:0 5px 20px #0000000d}
+.quick-icon{min-width:45px;height:45px;border-radius:50%;background:#e7f0ff;display:flex;align-items:center;justify-content:center;font-size:22px}
+.quick-card h3{font-size:14px;margin-bottom:9px}
 .quick-card p{font-size:11px;line-height:1.6;color:#718096;margin-bottom:12px}
-.quick-card a{color:#0864d7;font-size:11px;font-weight:700}
+.quick-card a,.read-more{color:#0864d7;font-size:12px;font-weight:bold}
 
-/* GENERAL SECTIONS */
-.section{padding:90px 0}
-.section-label{color:#0870e8;font-size:11px;font-weight:800;letter-spacing:1.5px;margin-bottom:12px}
-.section h2{font-size:38px;margin-bottom:20px;color:#0b3268}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.about-image{height:400px}
-.image-placeholder{height:100%;background:linear-gradient(rgba(7,60,130,.3),rgba(7,60,130,.6)),url("https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=1000&q=80");background-size:cover;background-position:center;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white}
+.section{padding:80px 0}
+.section-label{color:#0870e8;font-size:11px;font-weight:bold;letter-spacing:1.5px;margin-bottom:12px}
+.section h2{font-size:34px;margin-bottom:20px;color:#0b3268}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-image{height:380px}
+.image-placeholder{height:100%;background:linear-gradient(#073c824d,#073c8299),url("https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=1000&q=80") center/cover;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white}
 .image-placeholder span{font-size:60px}
-.image-placeholder p{font-weight:800;margin-top:15px}
+.image-placeholder p{font-weight:bold;margin-top:15px}
 .about-text p:not(.section-label){color:#68778e;font-size:14px;line-height:1.9;margin-bottom:18px}
-.read-more{display:inline-block;color:#0864d7;font-weight:700;font-size:13px;margin-top:10px}
 
-/* PROGRAMS */
-.programs{background:#f6f9fd}
-.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:40px}
+.programs,.news{background:#f6f9fd}
+.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}
 .section-heading>div p:last-child{color:#718096;font-size:13px}
-.section-heading>a{color:#0864d7;font-size:12px;font-weight:700}
+.section-heading>a{color:#0864d7;font-size:12px;font-weight:bold}
 .program-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.program-card{background:white;padding:30px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.05);transition:.3s}
-.program-card:hover{transform:translateY(-7px)}
-.program-icon{font-size:35px;margin-bottom:20px}
+.program-card{background:white;padding:25px;border-radius:12px;box-shadow:0 5px 20px #0000000d}
+.program-icon{font-size:35px;margin-bottom:18px}
 .program-card h3{font-size:16px;margin-bottom:12px}
 .program-card p{color:#718096;font-size:12px;line-height:1.7;min-height:60px}
-.program-card a{display:block;margin-top:20px;color:#0864d7;font-size:11px;font-weight:700}
+.program-card a{display:block;margin-top:20px;color:#0864d7;font-size:11px;font-weight:bold}
 
-/* STUDENTS */
-.students{background:white}
 .student-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.student-card{padding:35px;border:1px solid #e7edf5;border-radius:15px;transition:.3s}
-.student-card:hover{box-shadow:0 10px 30px rgba(0,0,0,.08);transform:translateY(-5px)}
+.student-card{padding:30px;border:1px solid #e7edf5;border-radius:15px}
 .student-icon{font-size:40px;margin-bottom:20px}
 .student-card h3{margin-bottom:12px}
 .student-card p{color:#718096;line-height:1.7;font-size:13px}
-.student-card a{display:inline-block;color:#0864d7;margin-top:18px;font-weight:700;font-size:12px}
+.student-card a{display:inline-block;color:#0864d7;margin-top:18px;font-weight:bold;font-size:12px}
 
-/* REGISTRATION CTA */
 .registration-cta{background:#f5f8fc;padding:60px 0}
-.registration-box{background:linear-gradient(110deg,#063879,#0870e8);color:white;padding:60px 80px;border-radius:20px;display:flex;align-items:center;justify-content:space-between}
+.registration-box{background:linear-gradient(110deg,#063879,#0870e8);color:white;padding:55px 60px;border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:25px}
 .registration-text{max-width:650px}
 .registration-text .section-label{color:#a9d0ff}
 .registration-box h2{color:white}
 .registration-box p{color:#d9eaff;line-height:1.8;font-size:14px}
-.registration-icon{font-size:100px}
-.register-btn{display:inline-block;border:none;background:white;color:#0864d7;padding:14px 25px;border-radius:25px;font-weight:700;cursor:pointer;margin-top:25px}
+.registration-icon{font-size:80px}
+.register-btn{display:inline-block;background:white;color:#0864d7;padding:14px 25px;border-radius:25px;font-weight:bold;margin-top:25px}
 
-/* RESEARCH */
 .research-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:center}
 .research-grid>div:first-child p:not(.section-label){color:#718096;line-height:1.9;font-size:14px}
-.research-box{padding:50px;background:#eef5ff;border-radius:20px}
+.research-box{padding:40px;background:#eef5ff;border-radius:20px}
 .research-box span{font-size:50px}
 .research-box h3{margin:20px 0 10px}
 .research-box p{color:#718096;line-height:1.7;font-size:13px}
 
-/* NEWS */
-.news{background:#f6f9fd}
 .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
-.news-card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,.05)}
-.news-image{height:180px;background:linear-gradient(135deg,#0751a9,#55a5ff);display:flex;align-items:center;justify-content:center;color:white;font-size:65px}
-.news-content{padding:25px}
-.news-content>span{color:#0870e8;font-size:10px;font-weight:700}
+.news-card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 5px 20px #0000000d}
+.news-image{height:170px;background:linear-gradient(135deg,#0751a9,#55a5ff);display:flex;align-items:center;justify-content:center;color:white;font-size:60px}
+.news-content{padding:24px}
+.news-content>span{color:#0870e8;font-size:10px;font-weight:bold}
 .news-content h3{font-size:15px;line-height:1.5;margin:12px 0}
 .news-content p{color:#718096;font-size:12px;line-height:1.7}
-.news-content a{display:inline-block;color:#0864d7;margin-top:18px;font-size:11px;font-weight:700}
+.news-content a{display:inline-block;color:#0864d7;margin-top:18px;font-size:11px;font-weight:bold}
 
-/* STATISTICS */
 .statistics{background:#062e63;color:white;padding:45px 0}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{text-align:center;border-right:1px solid rgba(255,255,255,.25)}
-.stat:last-child{border:none}
-.stat strong{display:block;color:#ffd45a;font-size:32px;margin-bottom:7px}
+.stat{text-align:center;border-right:1px solid #ffffff40;padding:10px}
+.stat:last-child{border:0}
+.stat strong{display:block;color:#ffd45a;font-size:30px;margin-bottom:7px}
 .stat span{font-size:12px;color:#d7e6f8}
 
-/* ADMISSION FORM */
-.registration{background:#f5f8fc;padding:80px 5%;display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:30px;align-items:start}
-.registration-intro{background:linear-gradient(140deg,#063879,#0870e8);color:white;padding:35px 25px;border-radius:16px}
+/* БҮРТГЭЛ */
+.registration{background:#f5f8fc;padding:75px 5%;display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:25px;align-items:start}
+.registration-intro{background:linear-gradient(140deg,#063879,#0870e8);color:white;padding:30px 25px;border-radius:16px}
 .registration-intro .small-title{color:#ffd45a}
-.registration-intro h2{font-size:30px;margin:15px 0;color:white}
-.registration-intro p{font-size:14px;line-height:1.8;color:#e5efff;margin-bottom:15px}
-.intro-icon{font-size:55px;margin:25px 0}
-.registration-form{background:white;padding:35px;border-radius:16px;box-shadow:0 5px 25px rgba(0,0,0,.07)}
-.registration-form h2{font-size:26px;color:#073a80;margin-bottom:25px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.registration-intro h2{font-size:28px;margin:15px 0;color:white}
+.registration-intro p{font-size:13px;line-height:1.8;color:#e5efff;margin-bottom:15px}
+.intro-icon{font-size:50px;margin:25px 0}
+.registration-form{background:white;padding:30px;border-radius:16px;box-shadow:0 5px 25px #00000012}
+.registration-form h2{font-size:24px;color:#073a80;margin-bottom:25px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .field{display:flex;flex-direction:column;gap:8px}
-.field label{font-size:13px;font-weight:700;color:#173d73}
-.field input,.field select{width:100%;padding:13px;border:1px solid #dce5ef;border-radius:8px;font-size:13px;outline:none;background:white}
-.field input:focus,.field select:focus{border-color:#0870e8;box-shadow:0 0 0 3px rgba(8,112,232,.1)}
-.registration-form button{width:100%;margin-top:25px;padding:15px;border:none;border-radius:8px;background:#0864d7;color:white;font-weight:700;font-size:14px;cursor:pointer}
+.field label{font-size:12px;font-weight:bold;color:#173d73}
+.field input,.field select{width:100%;padding:12px;border:1px solid #dce5ef;border-radius:8px;font-size:13px;background:white}
+.field input:focus,.field select:focus{border-color:#0870e8;outline:2px solid #0870e822}
+.registration-form button{width:100%;margin-top:25px;padding:15px;border:0;border-radius:8px;background:#0864d7;color:white;font-weight:bold;font-size:14px;cursor:pointer}
 .registration-form button:hover{background:#064da8}
 .form-note{font-size:11px;color:#718096;margin-top:15px}
-.registration-info{background:white;border-radius:16px;padding:30px;box-shadow:0 5px 25px rgba(0,0,0,.06)}
-.registration-info h3{font-size:18px;color:#073a80;margin-bottom:25px}
-.info-item{display:flex;gap:13px;align-items:flex-start;margin-bottom:22px}
-.info-item span{width:36px;height:36px;flex-shrink:0;border-radius:8px;background:#e7f0ff;color:#0864d7;display:flex;align-items:center;justify-content:center;font-size:18px}
+.registration-info{background:white;border-radius:16px;padding:25px;box-shadow:0 5px 25px #0000000d}
+.registration-info h3{font-size:17px;color:#073a80;margin-bottom:25px}
+.info-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:20px}
+.info-item span{width:34px;height:34px;flex-shrink:0;border-radius:8px;background:#e7f0ff;color:#0864d7;display:flex;align-items:center;justify-content:center}
 .info-item p{font-size:12px;color:#718096;line-height:1.8}
-.info-item strong{color:#173d73;font-size:13px}
+.info-item strong{color:#173d73;font-size:12px}
 
-/* FOOTER */
-footer{background:#031d40;color:white;padding-top:60px}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:50px;padding-bottom:50px}
+footer{background:#031d40;color:white;padding-top:55px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:35px;padding-bottom:45px}
 .footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:20px}
 .footer-logo h3{font-size:14px}
 .footer-logo p{color:#8fa6c2;font-size:9px;margin-top:5px}
 .footer-about>p{color:#9fb2ca;font-size:12px;line-height:1.7}
 footer h4{font-size:12px;margin-bottom:20px;color:#ffd45a}
 footer a,footer p{display:block;color:#9fb2ca;font-size:11px;margin-bottom:12px}
-.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.1);padding:20px;color:#7189a6;font-size:10px}
+.copyright{text-align:center;border-top:1px solid #ffffff1a;padding:20px;color:#7189a6;font-size:10px}
 
-/* RESPONSIVE */
 @media(max-width:1000px){
 nav{display:none;position:absolute;top:82px;left:0;width:100%;background:white;flex-direction:column;padding:25px}
 nav.active{display:flex}
@@ -168,390 +150,233 @@ nav.active{display:flex}
 }
 @media(max-width:650px){
 .logo-text,.login-btn{display:none}
-.hero{min-height:520px}
-.hero-content{padding-top:90px}
+.hero{min-height:500px}
+.hero-content{padding-top:80px}
 .hero h1{font-size:40px}
-.hero-buttons{flex-direction:column}
+.hero-buttons{flex-direction:column;align-items:flex-start}
 .quick-grid,.program-grid,.student-grid,.news-grid,.stats-grid,.footer-grid{grid-template-columns:1fr}
-.section{padding:60px 0}
+.section{padding:55px 0}
 .section-heading{display:block}
-.section-heading>a{display:inline-block;margin-top:20px}
-.registration-box{padding:40px 25px}
+.section-heading>a{display:inline-block;margin-top:18px}
+.registration-box{padding:35px 25px}
 .registration-icon{display:none}
-.stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.2);padding:20px}
-.registration{grid-template-columns:1fr;padding:45px 5%}
+.stat{border-right:0;border-bottom:1px solid #ffffff33;padding:18px}
+.registration{grid-template-columns:1fr;padding:40px 5%}
 .registration-intro{grid-column:auto}
 .form-grid{grid-template-columns:1fr}
-.registration-form{padding:25px}
+.registration-form{padding:23px}
 }
 </style>
 </head>
 
 <body>
-
 <header>
-    <div class="container nav">
-        <a href="#home" class="logo">
-            <div class="logo-icon">МИС</div>
-            <div class="logo-text">
-                <h2>МОНГОЛЫН ИХ СУРГУУЛЬ</h2>
-                <p>Мэдлэг • Шинжлэх ухаан • Ирээдүй</p>
-            </div>
-        </a>
-
-        <nav id="navMenu">
-            <a href="#home">Нүүр</a>
-            <a href="#about">Бидний тухай</a>
-            <a href="#programs">Хөтөлбөрүүд</a>
-            <a href="#students">Оюутан</a>
-            <a href="#research">Судалгаа</a>
-            <a href="#news">Мэдээ</a>
-            <a href="#contact">Холбоо барих</a>
-        </nav>
-
-        <a href="#registration" class="login-btn">Элсэлтийн бүртгэл</a>
-        <button class="menu-btn" onclick="toggleMenu()" aria-label="Цэс нээх">☰</button>
-    </div>
+  <div class="container nav">
+    <a href="#home" class="logo">
+      <div class="logo-icon">МИС</div>
+      <div class="logo-text">
+        <h2>МОНГОЛЫН ИХ СУРГУУЛЬ</h2>
+        <p>Мэдлэг • Шинжлэх ухаан • Ирээдүй</p>
+      </div>
+    </a>
+    <nav id="navMenu">
+      <a href="#home">Нүүр</a>
+      <a href="#about">Бидний тухай</a>
+      <a href="#programs">Хөтөлбөрүүд</a>
+      <a href="#students">Оюутан</a>
+      <a href="#research">Судалгаа</a>
+      <a href="#news">Мэдээ</a>
+      <a href="#contact">Холбоо барих</a>
+    </nav>
+    <a href="#registration" class="login-btn">Элсэлтийн бүртгэл</a>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Цэс нээх">☰</button>
+  </div>
 </header>
 
 <main>
 <section class="hero" id="home">
-    <div class="container hero-content">
-        <p class="small-title">МОНГОЛЫН ИХ СУРГУУЛЬД ТАВТАЙ МОРИЛ</p>
-        <h1>Ирээдүйгээ<br><span>хамтдаа бүтээе.</span></h1>
-        <p class="hero-description">
-            Мэдлэг, ур чадвар, бүтээлч сэтгэлгээг хөгжүүлж,
-            ирээдүйн мэргэжилтнүүдийг бэлтгэх чанартай боловсрол.
-        </p>
-        <div class="hero-buttons">
-            <a href="#programs" class="btn primary">Хөтөлбөрүүд үзэх →</a>
-            <a href="#about" class="btn secondary">Дэлгэрэнгүй мэдээлэл</a>
-        </div>
+  <div class="container hero-content">
+    <p class="small-title">МОНГОЛЫН ИХ СУРГУУЛЬД ТАВТАЙ МОРИЛ</p>
+    <h1>Ирээдүйгээ<br><span>хамтдаа бүтээе.</span></h1>
+    <p class="hero-description">Мэдлэг, ур чадвар, бүтээлч сэтгэлгээг хөгжүүлж, ирээдүйн мэргэжилтнүүдийг бэлтгэх чанартай боловсрол.</p>
+    <div class="hero-buttons">
+      <a href="#programs" class="btn primary">Хөтөлбөрүүд үзэх →</a>
+      <a href="#about" class="btn secondary">Дэлгэрэнгүй мэдээлэл</a>
     </div>
+  </div>
 </section>
 
 <section class="quick-section">
-    <div class="container quick-grid">
-        <div class="quick-card">
-            <div class="quick-icon">🎓</div>
-            <div><h3>Сургалтын хөтөлбөр</h3><p>Өөрт тохирсон мэргэжлээ сонгоорой.</p><a href="#programs">Дэлгэрэнгүй →</a></div>
-        </div>
-        <div class="quick-card">
-            <div class="quick-icon">📝</div>
-            <div><h3>Элсэлтийн бүртгэл</h3><p>Цахимаар бүртгүүлж мэдээллээ илгээнэ.</p><a href="#registration">Бүртгүүлэх →</a></div>
-        </div>
-        <div class="quick-card">
-            <div class="quick-icon">📚</div>
-            <div><h3>Оюутны үйлчилгээ</h3><p>Оюутанд зориулсан үйлчилгээ, мэдээлэл.</p><a href="#students">Дэлгэрэнгүй →</a></div>
-        </div>
-        <div class="quick-card">
-            <div class="quick-icon">🔬</div>
-            <div><h3>Судалгаа</h3><p>Шинэ санаа, инновацыг дэмжинэ.</p><a href="#research">Дэлгэрэнгүй →</a></div>
-        </div>
-    </div>
+  <div class="container quick-grid">
+    <div class="quick-card"><div class="quick-icon">🎓</div><div><h3>Сургалтын хөтөлбөр</h3><p>Өөрт тохирсон мэргэжлээ сонгоорой.</p><a href="#programs">Дэлгэрэнгүй →</a></div></div>
+    <div class="quick-card"><div class="quick-icon">📝</div><div><h3>Элсэлтийн бүртгэл</h3><p>Цахимаар бүртгүүлж мэдээллээ илгээнэ.</p><a href="#registration">Бүртгүүлэх →</a></div></div>
+    <div class="quick-card"><div class="quick-icon">📚</div><div><h3>Оюутны үйлчилгээ</h3><p>Оюутанд зориулсан үйлчилгээ, мэдээлэл.</p><a href="#students">Дэлгэрэнгүй →</a></div></div>
+    <div class="quick-card"><div class="quick-icon">🔬</div><div><h3>Судалгаа</h3><p>Шинэ санаа, инновацыг дэмжинэ.</p><a href="#research">Дэлгэрэнгүй →</a></div></div>
+  </div>
 </section>
 
 <section class="section" id="about">
-    <div class="container about-grid">
-        <div class="about-image">
-            <div class="image-placeholder">
-                <span>🏛️</span>
-                <p>БОЛОВСРОЛЫН ИРЭЭДҮЙ</p>
-            </div>
-        </div>
-        <div class="about-text">
-            <p class="section-label">БИДНИЙ ТУХАЙ</p>
-            <h2>Мэдлэгээр ирээдүйг бүтээнэ</h2>
-            <p>Монголын Их Сургууль нь оюутнуудад чанартай боловсрол олгож, мэдлэг, ур чадвар, бүтээлч сэтгэлгээг хөгжүүлэхийг зорьдог.</p>
-            <p>Бид онолын мэдлэгийг бодит дадлагатай хослуулан, нийгэмд хэрэгтэй чадварлаг мэргэжилтэн бэлтгэхэд анхаардаг.</p>
-            <a href="#contact" class="read-more">Бидэнтэй холбогдох →</a>
-        </div>
+  <div class="container about-grid">
+    <div class="about-image"><div class="image-placeholder"><span>🏛️</span><p>БОЛОВСРОЛЫН ИРЭЭДҮЙ</p></div></div>
+    <div class="about-text">
+      <p class="section-label">БИДНИЙ ТУХАЙ</p>
+      <h2>Мэдлэгээр ирээдүйг бүтээнэ</h2>
+      <p>Монголын Их Сургууль нь оюутнуудад чанартай боловсрол олгож, мэдлэг, ур чадвар, бүтээлч сэтгэлгээг хөгжүүлэхийг зорьдог.</p>
+      <p>Бид онолын мэдлэгийг бодит дадлагатай хослуулан, нийгэмд хэрэгтэй чадварлаг мэргэжилтэн бэлтгэхэд анхаардаг.</p>
+      <a href="#contact" class="read-more">Бидэнтэй холбогдох →</a>
     </div>
+  </div>
 </section>
 
 <section class="section programs" id="programs">
-    <div class="container">
-        <div class="section-heading">
-            <div>
-                <p class="section-label">СУРГАЛТЫН ЧИГЛЭЛ</p>
-                <h2>Манай хөтөлбөрүүд</h2>
-                <p>Өөрийн сонирхол, зорилгод тохирсон чиглэлээ сонгоорой.</p>
-            </div>
-            <a href="#registration">Элсэлтийн бүртгэл →</a>
-        </div>
-
-        <div class="program-grid">
-            <article class="program-card">
-                <div class="program-icon">💻</div>
-                <h3>Мэдээллийн технологи</h3>
-                <p>Программ хангамж, мэдээллийн систем, сүлжээний суурь мэдлэг эзэмшинэ.</p>
-                <a href="#registration">Бүртгүүлэх →</a>
-            </article>
-            <article class="program-card">
-                <div class="program-icon">📊</div>
-                <h3>Бизнес, санхүү</h3>
-                <p>Бизнесийн удирдлага, санхүүгийн төлөвлөлт, байгууллагын үйл ажиллагааг судална.</p>
-                <a href="#registration">Бүртгүүлэх →</a>
-            </article>
-            <article class="program-card">
-                <div class="program-icon">🩺</div>
-                <h3>Эрүүл мэндийн менежмент</h3>
-                <p>Эрүүл мэндийн байгууллагын зохион байгуулалт, удирдлагын талаар суралцана.</p>
-                <a href="#registration">Бүртгүүлэх →</a>
-            </article>
-            <article class="program-card">
-                <div class="program-icon">🎨</div>
-                <h3>Дизайн, урлаг</h3>
-                <p>Бүтээлч сэтгэлгээ, визуал дизайн болон дижитал бүтээлийн ур чадвараа хөгжүүлнэ.</p>
-                <a href="#registration">Бүртгүүлэх →</a>
-            </article>
-        </div>
+  <div class="container">
+    <div class="section-heading"><div><p class="section-label">СУРГАЛТЫН ЧИГЛЭЛ</p><h2>Манай хөтөлбөрүүд</h2><p>Өөрийн сонирхол, зорилгод тохирсон чиглэлээ сонгоорой.</p></div><a href="#registration">Элсэлтийн бүртгэл →</a></div>
+    <div class="program-grid">
+      <article class="program-card"><div class="program-icon">💻</div><h3>Мэдээллийн технологи</h3><p>Программ хангамж, мэдээллийн систем, сүлжээний суурь мэдлэг эзэмшинэ.</p><a href="#registration">Бүртгүүлэх →</a></article>
+      <article class="program-card"><div class="program-icon">📊</div><h3>Бизнес, санхүү</h3><p>Бизнесийн удирдлага, санхүүгийн төлөвлөлт, байгууллагын үйл ажиллагааг судална.</p><a href="#registration">Бүртгүүлэх →</a></article>
+      <article class="program-card"><div class="program-icon">🩺</div><h3>Эрүүл мэндийн менежмент</h3><p>Эрүүл мэндийн байгууллагын зохион байгуулалт, удирдлагын талаар суралцана.</p><a href="#registration">Бүртгүүлэх →</a></article>
+      <article class="program-card"><div class="program-icon">🎨</div><h3>Дизайн, урлаг</h3><p>Бүтээлч сэтгэлгээ, визуал дизайн болон дижитал бүтээлийн ур чадвараа хөгжүүлнэ.</p><a href="#registration">Бүртгүүлэх →</a></article>
     </div>
+  </div>
 </section>
 
-<section class="section students" id="students">
-    <div class="container">
-        <p class="section-label">ОЮУТНЫ АМЬДРАЛ</p>
-        <h2>Оюутанд зориулсан боломжууд</h2>
-        <div class="student-grid">
-            <article class="student-card">
-                <div class="student-icon">📖</div>
-                <h3>Номын сан</h3>
-                <p>Хичээл, судалгаанд хэрэгтэй ном, материал болон мэдээллийн эх сурвалж ашиглах боломж.</p>
-                <a href="#contact">Дэлгэрэнгүй →</a>
-            </article>
-            <article class="student-card">
-                <div class="student-icon">🤝</div>
-                <h3>Оюутны клуб</h3>
-                <p>Сонирхол нэгтэй оюутнуудтай хамтран ажиллаж, ур чадвар болон харилцаагаа хөгжүүлнэ.</p>
-                <a href="#contact">Дэлгэрэнгүй →</a>
-            </article>
-            <article class="student-card">
-                <div class="student-icon">🌐</div>
-                <h3>Олон улсын боломж</h3>
-                <p>Шинэ мэдлэг, соёлтой танилцаж, олон улсын түвшинд хөгжих боломжуудыг судална.</p>
-                <a href="#contact">Дэлгэрэнгүй →</a>
-            </article>
-        </div>
+<section class="section" id="students">
+  <div class="container">
+    <p class="section-label">ОЮУТНЫ АМЬДРАЛ</p>
+    <h2>Оюутанд зориулсан боломжууд</h2>
+    <div class="student-grid">
+      <article class="student-card"><div class="student-icon">📖</div><h3>Номын сан</h3><p>Хичээл, судалгаанд хэрэгтэй ном, материал болон мэдээллийн эх сурвалж ашиглах боломж.</p><a href="#contact">Дэлгэрэнгүй →</a></article>
+      <article class="student-card"><div class="student-icon">🤝</div><h3>Оюутны клуб</h3><p>Сонирхол нэгтэй оюутнуудтай хамтран ажиллаж, ур чадвар болон харилцаагаа хөгжүүлнэ.</p><a href="#contact">Дэлгэрэнгүй →</a></article>
+      <article class="student-card"><div class="student-icon">🌐</div><h3>Олон улсын боломж</h3><p>Шинэ мэдлэг, соёлтой танилцаж, олон улсын түвшинд хөгжих боломжуудыг судална.</p><a href="#contact">Дэлгэрэнгүй →</a></article>
     </div>
+  </div>
 </section>
 
 <section class="registration-cta">
-    <div class="container registration-box">
-        <div class="registration-text">
-            <p class="section-label">ЦАХИМ ҮЙЛЧИЛГЭЭ</p>
-            <h2>Элсэлтийн бүртгэлээ эхлүүлээрэй</h2>
-            <p>Элсэлтийн хүсэлт гаргаж, сургалтын мэдээллээ шалгах зэрэг үйлчилгээг цахимаар авах боломжтой.</p>
-            <a class="register-btn" href="#registration">Бүртгэл хийх →</a>
-        </div>
-        <div class="registration-icon">📝</div>
-    </div>
+  <div class="container registration-box">
+    <div class="registration-text"><p class="section-label">ЦАХИМ ҮЙЛЧИЛГЭЭ</p><h2>Элсэлтийн бүртгэлээ эхлүүлээрэй</h2><p>Элсэлтийн хүсэлт гаргаж, сургалтын мэдээллээ цахимаар илгээнэ үү.</p><a class="register-btn" href="#registration">Бүртгэл хийх →</a></div>
+    <div class="registration-icon">📝</div>
+  </div>
 </section>
 
 <section class="section" id="research">
-    <div class="container research-grid">
-        <div>
-            <p class="section-label">СУДАЛГАА</p>
-            <h2>Судалгаа ба инновац</h2>
-            <p>Шинэ мэдлэг бүтээх, технологийн шинэчлэл хийх болон нийгмийн асуудлыг шийдвэрлэх судалгааны ажлуудыг дэмжин ажилладаг.</p>
-            <a href="#contact" class="read-more">Судалгааны мэдээлэл →</a>
-        </div>
-        <div class="research-box">
-            <span>🔬</span>
-            <h3>Шинэ санаа</h3>
-            <p>Оюутан, багш, судлаачдын шинэ санаа, инновацын төслүүдийг дэмжинэ.</p>
-        </div>
-    </div>
+  <div class="container research-grid">
+    <div><p class="section-label">СУДАЛГАА</p><h2>Судалгаа ба инновац</h2><p>Шинэ мэдлэг бүтээх, технологийн шинэчлэл хийх болон нийгмийн асуудлыг шийдвэрлэх судалгааны ажлуудыг дэмжин ажилладаг.</p><a href="#contact" class="read-more">Судалгааны мэдээлэл →</a></div>
+    <div class="research-box"><span>🔬</span><h3>Шинэ санаа</h3><p>Оюутан, багш, судлаачдын шинэ санаа, инновацын төслүүдийг дэмжинэ.</p></div>
+  </div>
 </section>
 
 <section class="section news" id="news">
-    <div class="container">
-        <div class="section-heading">
-            <div>
-                <p class="section-label">СҮҮЛИЙН МЭДЭЭ</p>
-                <h2>Мэдээ, үйл явдал</h2>
-            </div>
-            <a href="#news">Бүх мэдээг харах →</a>
-        </div>
-        <div class="news-grid">
-            <article class="news-card">
-                <div class="news-image">🎓</div>
-                <div class="news-content">
-                    <span>2026.09.01</span>
-                    <h3>Шинэ хичээлийн жилийн нээлт боллоо</h3>
-                    <p>Оюутнууд шинэ хичээлийн жилээ амжилттай эхлүүллээ.</p>
-                    <a href="#news">Дэлгэрэнгүй →</a>
-                </div>
-            </article>
-            <article class="news-card">
-                <div class="news-image">🏆</div>
-                <div class="news-content">
-                    <span>2026.08.25</span>
-                    <h3>Оюутнуудын шинэ амжилт</h3>
-                    <p>Манай оюутнууд улсын хэмжээний тэмцээнд амжилттай оролцлоо.</p>
-                    <a href="#news">Дэлгэрэнгүй →</a>
-                </div>
-            </article>
-            <article class="news-card">
-                <div class="news-image">🔬</div>
-                <div class="news-content">
-                    <span>2026.08.18</span>
-                    <h3>Шинэ судалгааны төсөл эхэллээ</h3>
-                    <p>Шинжлэх ухааны шинэ судалгааны төсөл хэрэгжиж эхэллээ.</p>
-                    <a href="#news">Дэлгэрэнгүй →</a>
-                </div>
-            </article>
-        </div>
+  <div class="container">
+    <div class="section-heading"><div><p class="section-label">СҮҮЛИЙН МЭДЭЭ</p><h2>Мэдээ, үйл явдал</h2></div><a href="#news">Бүх мэдээг харах →</a></div>
+    <div class="news-grid">
+      <article class="news-card"><div class="news-image">🎓</div><div class="news-content"><span>2026.09.01</span><h3>Шинэ хичээлийн жилийн нээлт боллоо</h3><p>Оюутнууд шинэ хичээлийн жилээ амжилттай эхлүүллээ.</p><a href="#news">Дэлгэрэнгүй →</a></div></article>
+      <article class="news-card"><div class="news-image">🏆</div><div class="news-content"><span>2026.08.25</span><h3>Оюутнуудын шинэ амжилт</h3><p>Манай оюутнууд улсын хэмжээний тэмцээнд амжилттай оролцлоо.</p><a href="#news">Дэлгэрэнгүй →</a></div></article>
+      <article class="news-card"><div class="news-image">🔬</div><div class="news-content"><span>2026.08.18</span><h3>Шинэ судалгааны төсөл эхэллээ</h3><p>Шинжлэх ухааны шинэ судалгааны төсөл хэрэгжиж эхэллээ.</p><a href="#news">Дэлгэрэнгүй →</a></div></article>
     </div>
+  </div>
 </section>
 
 <section class="statistics">
-    <div class="container stats-grid">
-        <div class="stat"><strong>15,000+</strong><span>Оюутан</span></div>
-        <div class="stat"><strong>120+</strong><span>Сургалтын хөтөлбөр</span></div>
-        <div class="stat"><strong>85+</strong><span>Хамтран ажилладаг улс</span></div>
-        <div class="stat"><strong>95%</strong><span>Ажил эрхлэлт</span></div>
-    </div>
+  <div class="container stats-grid">
+    <div class="stat"><strong>15,000+</strong><span>Оюутан</span></div>
+    <div class="stat"><strong>120+</strong><span>Сургалтын хөтөлбөр</span></div>
+    <div class="stat"><strong>85+</strong><span>Хамтран ажилладаг улс</span></div>
+    <div class="stat"><strong>95%</strong><span>Ажил эрхлэлт</span></div>
+  </div>
 </section>
 
-<!-- ЭЛСЭЛТИЙН БҮРТГЭЛ -->
+<!-- NETLIFY ЭЛСЭЛТИЙН БҮРТГЭЛ -->
 <section class="registration" id="registration">
-    <div class="registration-intro">
-        <p class="small-title">ЭЛСЭЛТИЙН БҮРТГЭЛ</p>
-        <h2>Элсэлтийн бүртгэл</h2>
-        <p>Эрдмийн Өргөө Их Сургуульд суралцах хүсэлтэй бол өөрийн мэдээллийг үнэн зөв бөглөнө үү.</p>
-        <div class="intro-icon">🎓</div>
-        <h3>Ирээдүйн боловсролын эхлэл</h3>
-        <p>Мэдлэг, ур чадвараа хөгжүүлж, мөрөөдөлдөө хүрээрэй.</p>
+  <div class="registration-intro">
+    <p class="small-title">ЭЛСЭЛТИЙН БҮРТГЭЛ</p>
+    <h2>Элсэлтийн бүртгэл</h2>
+    <p>Суралцах хүсэлтэй бол мэдээллээ үнэн зөв бөглөнө үү.</p>
+    <div class="intro-icon">🎓</div>
+    <h3>Ирээдүйн боловсролын эхлэл</h3>
+    <p>Мэдлэг, ур чадвараа хөгжүүлж, мөрөөдөлдөө хүрээрэй.</p>
+  </div>
+
+  <form class="registration-form" name="admission" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="admission">
+
+    <p hidden><label>Энэ талбарыг хоосон үлдээнэ үү: <input name="bot-field"></label></p>
+
+    <h2>Бүртгэлийн мэдээлэл</h2>
+    <div class="form-grid">
+      <div class="field">
+        <label for="lastName">Овог *</label>
+        <input id="lastName" name="lastName" type="text" placeholder="Овгоо оруулна уу" required>
+      </div>
+      <div class="field">
+        <label for="firstName">Нэр *</label>
+        <input id="firstName" name="firstName" type="text" placeholder="Нэрээ оруулна уу" required>
+      </div>
+      <div class="field">
+        <label for="parentName">Эцэг / эхийн нэр *</label>
+        <input id="parentName" name="parentName" type="text" placeholder="Эцэг, эхийн нэр" required>
+      </div>
+      <div class="field">
+        <label for="email">И-мэйл хаяг *</label>
+        <input id="email" name="email" type="email" placeholder="example@email.com" required>
+      </div>
+      <div class="field">
+        <label for="phone">Утасны дугаар *</label>
+        <input id="phone" name="phone" type="tel" placeholder="Утасны дугаар" required>
+      </div>
+      <div class="field">
+        <label for="school">Сургалтын чиглэл *</label>
+        <select id="school" name="school" required>
+          <option value="">Чиглэл сонгох</option>
+          <option value="Мэдээллийн технологи">Мэдээллийн технологи</option>
+          <option value="Бизнес, санхүү">Бизнес, санхүү</option>
+          <option value="Эрүүл мэндийн менежмент">Эрүүл мэндийн менежмент</option>
+          <option value="Дизайн, урлаг">Дизайн, урлаг</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="program">Суралцах хөтөлбөр *</label>
+        <select id="program" name="program" required>
+          <option value="">Хөтөлбөр сонгох</option>
+          <option value="Бакалавр">Бакалавр</option>
+          <option value="Магистр">Магистр</option>
+          <option value="Доктор">Доктор</option>
+        </select>
+      </div>
     </div>
+    <button type="submit">Бүртгүүлэх →</button>
+    <p class="form-note">* тэмдэгтэй талбаруудыг заавал бөглөнө.</p>
+  </form>
 
-    <form class="registration-form">
-        <h2>Бүртгэлийн мэдээлэл</h2>
-        <div class="form-grid">
-            <div class="field">
-                <label for="lastName">Овог *</label>
-                <input id="lastName" name="lastName" type="text" placeholder="Овгоо оруулна уу" required>
-            </div>
-            <div class="field">
-                <label for="firstName">Нэр *</label>
-                <input id="firstName" name="firstName" type="text" placeholder="Нэрээ оруулна уу" required>
-            </div>
-            <div class="field">
-                <label for="parentName">Эцэг / эхийн нэр *</label>
-                <input id="parentName" name="parentName" type="text" placeholder="Эцэг, эхийн нэр" required>
-            </div>
-            <div class="field">
-                <label for="registerNumber">Регистрийн дугаар *</label>
-                <input id="registerNumber" name="registerNumber" type="text" placeholder="Регистрийн дугаар" required>
-            </div>
-            <div class="field">
-                <label for="email">И-мэйл хаяг *</label>
-                <input id="email" name="email" type="email" placeholder="example@email.com" required>
-            </div>
-            <div class="field">
-                <label for="phone">Утасны дугаар *</label>
-                <input id="phone" name="phone" type="tel" placeholder="Утасны дугаар" required>
-            </div>
-            <div class="field">
-                <label for="school">Сургууль *</label>
-                <select id="school" name="school" required>
-                    <option value="">Сургууль сонгох</option>
-                    <option>Мэдээллийн технологи</option>
-                    <option>Бизнес, санхүү</option>
-                    <option>Эрүүл мэндийн менежмент</option>
-                    <option>Дизайн, урлаг</option>
-                </select>
-            </div>
-            <div class="field">
-                <label for="program">Суралцах хөтөлбөр *</label>
-                <select id="program" name="program" required>
-                    <option value="">Хөтөлбөр сонгох</option>
-                    <option>Мэдээллийн технологи</option>
-                    <option>Санхүү</option>
-                    <option>Бизнесийн удирдлага</option>
-                    <option>Дизайн</option>
-                </select>
-            </div>
-        </div>
-        <button type="submit">Бүртгүүлэх →</button>
-        <p class="form-note">* тэмдэгтэй талбаруудыг заавал бөглөнө.</p>
-    </form>
-
-    <aside class="registration-info" id="contact">
-        <h3>Бүртгэлийн талаар мэдээлэл</h3>
-        <div class="info-item">
-            <span>▣</span>
-            <p><strong>Бүртгэл эхлэх огноо</strong><br>2026.10.01</p>
-        </div>
-        <div class="info-item">
-            <span>◷</span>
-            <p><strong>Бүртгэл дуусах огноо</strong><br>2026.11.30</p>
-        </div>
-        <div class="info-item">
-            <span>☎</span>
-            <p><strong>Холбоо барих</strong><br>+976 7700 1234</p>
-        </div>
-        <div class="info-item">
-            <span>✉</span>
-            <p><strong>И-мэйл</strong><br>info@erdmiin-urgoo.edu.mn</p>
-        </div>
-        <div class="info-item">
-            <span>?</span>
-            <p><strong>Зөвлөгөө авах</strong><br>Элсэлтийн талаар нэмэлт мэдээлэл аваарай.</p>
-        </div>
-    </aside>
+  <aside class="registration-info" id="contact">
+    <h3>Бүртгэлийн талаар мэдээлэл</h3>
+    <div class="info-item"><span>▣</span><p><strong>Бүртгэл эхлэх огноо</strong><br>2026.10.01</p></div>
+    <div class="info-item"><span>◷</span><p><strong>Бүртгэл дуусах огноо</strong><br>2026.11.30</p></div>
+    <div class="info-item"><span>☎</span><p><strong>Холбоо барих</strong><br>+976 7700 1234</p></div>
+    <div class="info-item"><span>✉</span><p><strong>И-мэйл</strong><br>info@erdmiin-urgoo.edu.mn</p></div>
+    <div class="info-item"><span>?</span><p><strong>Зөвлөгөө авах</strong><br>Элсэлтийн талаар нэмэлт мэдээлэл аваарай.</p></div>
+  </aside>
 </section>
 </main>
 
 <footer id="footer">
-    <div class="container footer-grid">
-        <div class="footer-about">
-            <div class="footer-logo">
-                <div class="logo-icon">МИС</div>
-                <div>
-                    <h3>МОНГОЛЫН ИХ СУРГУУЛЬ</h3>
-                    <p>Мэдлэг • Шинжлэх ухаан • Ирээдүй</p>
-                </div>
-            </div>
-            <p>Чанартай боловсролоор ирээдүйг хамтдаа бүтээнэ.</p>
-        </div>
-        <div>
-            <h4>СУРГУУЛЬ</h4>
-            <a href="#about">Бидний тухай</a>
-            <a href="#about">Удирдлага</a>
-            <a href="#about">Багш ажилтан</a>
-        </div>
-        <div>
-            <h4>ХӨТӨЛБӨР</h4>
-            <a href="#programs">Бакалавр</a>
-            <a href="#programs">Магистр</a>
-            <a href="#programs">Доктор</a>
-        </div>
-        <div>
-            <h4>ХОЛБОО БАРИХ</h4>
-            <p>📍 Улаанбаатар хот</p>
-            <p>☎ +976 11 123456</p>
-            <p>✉ info@mis.edu.mn</p>
-        </div>
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <div class="footer-logo"><div class="logo-icon">МИС</div><div><h3>МОНГОЛЫН ИХ СУРГУУЛЬ</h3><p>Мэдлэг • Шинжлэх ухаан • Ирээдүй</p></div></div>
+      <p>Чанартай боловсролоор ирээдүйг хамтдаа бүтээнэ.</p>
     </div>
-    <div class="copyright">© 2026 Монголын Их Сургууль. Бүх эрх хуулиар хамгаалагдсан.</div>
+    <div><h4>СУРГУУЛЬ</h4><a href="#about">Бидний тухай</a><a href="#about">Удирдлага</a><a href="#about">Багш ажилтан</a></div>
+    <div><h4>ХӨТӨЛБӨР</h4><a href="#programs">Бакалавр</a><a href="#programs">Магистр</a><a href="#programs">Доктор</a></div>
+    <div><h4>ХОЛБОО БАРИХ</h4><p>📍 Улаанбаатар хот</p><p>☎ +976 11 123456</p><p>✉ info@mis.edu.mn</p></div>
+  </div>
+  <div class="copyright">© 2026 Монголын Их Сургууль. Бүх эрх хуулиар хамгаалагдсан.</div>
 </footer>
 
 <script>
-function toggleMenu() {
-    const menu = document.getElementById("navMenu");
-    if (menu) menu.classList.toggle("active");
-}
-
-const admissionForm = document.querySelector(".registration-form");
-if (admissionForm) {
-    admissionForm.addEventListener("submit", function(event) {
-        event.preventDefault();
-        alert("Таны мэдээллийг бөглөж дууслаа. Энэ загвар сайт мэдээллийг серверт хадгалахгүй.");
-        admissionForm.reset();
-    });
+function toggleMenu(){
+  const menu=document.getElementById("navMenu");
+  if(menu) menu.classList.toggle("active");
 }
 </script>
-
 </body>
 </html>
